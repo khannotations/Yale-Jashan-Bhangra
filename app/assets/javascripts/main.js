@@ -15,6 +15,38 @@ $(document).ready(function() {
     console.log($(".link[target="+target+"]"))
     view = animate(target, view)
   })
+
+  $(".fancybox-thumb").fancybox({
+    prevEffect  : 'none',
+    nextEffect  : 'none',
+    helpers : {
+      title : {
+        type: 'outside'
+      },
+      overlay : {
+        opacity : 0.8,
+        css : {
+          'background-color' : '#000'
+        }
+      },
+      thumbs  : {
+        width : 50,
+        height  : 50
+      }
+    }
+  });
+  
+  $(".various").fancybox({
+    maxWidth  : 800,
+    maxHeight : 600,
+    fitToView : false,
+    width   : '70%',
+    height    : '70%',
+    autoSize  : false,
+    closeClick  : false,
+    openEffect  : 'none',
+    closeEffect : 'none'
+  });
 })
 
 function animate(target, view) {
