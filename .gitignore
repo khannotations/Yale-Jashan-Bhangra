@@ -16,7 +16,6 @@
 /lib
 /test
 /vendor
-/public
 /db
 /doc
 /app/helpers
