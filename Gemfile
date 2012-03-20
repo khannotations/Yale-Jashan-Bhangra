@@ -6,8 +6,17 @@ gem 'rails', '3.2.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'haml'
+gem 'heroku'
 
-# Gems used only for assets and not required
+group :development, :test do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+  gem 'thin'
+end
+
+# Gems
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
