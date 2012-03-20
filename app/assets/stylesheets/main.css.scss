@@ -1,0 +1,156 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$big_width: 1050px;
+$small_width: 950px;
+$min-height: 650px;
+
+body {
+  background-color: black;
+  font-family: $verdana;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+div { display: inline-block; }
+
+
+.block{ display: block; }
+.hidden { display: none; }
+.full_width { width: 100% }
+
+.inside {
+  margin: 0 auto;
+  display: block;
+}
+
+.container {
+  min-height: $min_height;
+}
+
+#main {
+  background: url("/assets/background.jpg") no-repeat;
+  background-size: 100%;
+  margin-top: 30px;
+  width: $big_width;
+}
+
+#content {
+  width: $small_width;
+  margin-top: 80px;
+  display: block;
+  background: #FDFDFD;
+  @include border-radius(10px);
+}
+
+.stuff {
+  padding: 30px;
+  display: block;
+
+  h1 {
+    margin: 0px;
+    color: crimson;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin: 0px;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+}
+
+#main_bar {
+  position: absolute;
+  display: block;
+  top: 0px;
+  height: 100px;
+  display: none;
+  width: 100%;
+  @include background-image(linear-gradient(rgba(30,30,30,0.6),rgba(black,0.6)));
+  z-index: 1;
+}
+
+.big_head {
+  width: $big_width;
+  font-size: 50px;
+  line-height: 50px;
+
+  img {
+    height: 86px;
+    display: inline;
+    margin-top: 7px;
+    margin-left: 40px;
+  }
+  .links {
+    float: right;
+    width: 900px;
+  }
+  .link {
+    width: 300px;
+    margin-top: 25px;
+    text-align: center;
+    color: white;
+    
+    float: right;
+    cursor: pointer;
+
+    &:hover {
+      text-shadow: rgba(white, 0.7) 0px 1px 2px;
+    }
+  }
+}
+.small_head {
+  display: block;
+  width: $small_width;
+  font-size: 24px;
+  line-height: 24px;
+
+  img {
+    height: 42px;
+    display: inline;
+    margin-top: 4px;
+    float: left;
+  }
+
+  .links {
+    float: left;
+    margin-left: 40px;
+  }
+
+  .link {
+    width: 100px;
+    margin-top: 13px;
+    color: white;
+
+    cursor: pointer;
+
+    &:hover {
+      text-shadow: rgba(white, 0.7) 0px 1px 2px;
+    }
+  }
+}
+
+.selected {
+  text-shadow: rgba(red, 0.5) 0px 2px 2px;
+}
+
+footer {
+  height: 30px;
+  font-size: 12px;
+  display: block;
+  width: $small_width;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  margin-top: 20px;
+}
