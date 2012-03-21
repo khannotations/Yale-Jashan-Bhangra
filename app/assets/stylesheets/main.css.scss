@@ -76,10 +76,10 @@ div { display: inline-block; }
 #main_bar {
   position: absolute;
   display: block;
-  top: 0px;
+  top: 567px;
   height: 100px;
   display: none;
-  width: 100%;
+  width: 0;
   @include background-image(linear-gradient(rgba(30,30,30,0.6),rgba(black,0.6)));
   z-index: 1;
 }

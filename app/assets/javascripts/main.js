@@ -4,9 +4,7 @@ $(document).ready(function() {
   $(".small_head ").hide();
   $("#content").hide();
   $(".stuff").hide();
-  $("#main_bar").show(function() {
-    $("#main_bar").animate({top: 567}, 1000);
-  })
+  $("#main_bar").show().animate({width:"100%"}, 800)
 
   $(".link").click(function() {
     target = $(this).attr("target");
