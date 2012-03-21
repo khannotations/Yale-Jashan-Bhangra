@@ -12,4 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require jquery.fancybox.pack
+//= require jquery.fancybox-thumbs
+//= require main

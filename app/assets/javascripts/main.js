@@ -35,7 +35,7 @@ $(document).ready(function() {
       }
     }
   });
-  
+
   $(".various").fancybox({
     maxWidth  : 800,
     maxHeight : 600,
@@ -47,6 +47,13 @@ $(document).ready(function() {
     openEffect  : 'none',
     closeEffect : 'none'
   });
+
+  var fancyboxClose = (function(){
+    var loaded = 0;    
+    return function(){ 
+        if(loaded++ % 2) $.fancybox.close();
+    }
+  })();
 })
 
 function animate(target, view) {
