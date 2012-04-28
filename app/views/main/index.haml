@@ -1,3 +1,11 @@
+%script
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=196239823792948";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
 #main_bar
   .inside.big_head
     %a{:href=> "http://yale.edu/bhangra"}
@@ -13,6 +21,8 @@
       .link{:target => "about"} About
       .link{:target => "media"} Media
       .link{:target => "team"} Team
+    .link.pull-right
+      .fb-like{"data-href"=>"https://www.facebook.com/pages/Yale-Jashan-Bhangra/190308261019210", "data-send"=>"false", "data-layout"=>"button_count", "data-width"=>"120", "data-show-faces"=>"false", "data-font"=>"lucida grande", :style => "margin-bottom: 10px;"}
 
 #main.container.inside
   
@@ -25,4 +35,6 @@
     = render :partial => "team"
 
 %footer
-  yalejashanbhangra@gmail.com&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;PO Box 200856 New Haven, CT 06520-0856
+  %a{:href => "mailto:yalejashanbhangra@gmail.com"} yalejashanbhangra@gmail.com
+  &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;PO Box 200856 New Haven, CT 06520-0856
+#gradient

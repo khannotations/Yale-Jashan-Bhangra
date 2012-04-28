@@ -5,10 +5,12 @@
 $big_width: 1050px;
 $small_width: 950px;
 $min-height: 650px;
+$content_color: #FDFDFD;
 
 body {
   background-color: black;
   font-family: $verdana;
+  font-family: Tahoma;
   height: 100%;
   width: 100%;
   margin: 0px;
@@ -25,6 +27,7 @@ div { display: inline-block; }
 .block{ display: block; }
 .hide { display: none; }
 .full_width { width: 100% }
+.pull-right{ float: right; }
 
 .inside {
   margin: 0 auto;
@@ -33,6 +36,10 @@ div { display: inline-block; }
 
 .container {
   min-height: $min_height;
+}
+
+#gradient {
+  @include linear-gradient(#444, #000);
 }
 
 #main {
@@ -46,8 +53,9 @@ div { display: inline-block; }
   width: $small_width;
   margin-top: 80px;
   display: block;
-  background: #FDFDFD;
-  @include border-radius(10px);
+  background: $content_color;
+  @include border-radius(3px);
+  @include box-shadow(0px 0px 2px 1px #333)
 }
 
 .stuff {
@@ -78,9 +86,10 @@ div { display: inline-block; }
   display: block;
   top: 567px;
   height: 100px;
-  display: none;
-  width: 0;
-  @include background-image(linear-gradient(rgba(30,30,30,0.6),rgba(black,0.6)));
+  width: 100%;
+  @include linear-gradient(rgba(30,30,30,0.6),rgba(black,0.6));
+  @include box-shadow(0px 0px 2px 1px #333);
+
   z-index: 1;
 }
 
@@ -118,7 +127,6 @@ div { display: inline-block; }
   width: $small_width;
   font-size: 24px;
   line-height: 24px;
-
   img {
     height: 42px;
     display: inline;
@@ -146,6 +154,14 @@ div { display: inline-block; }
 
 .selected {
   text-shadow: rgba(red, 0.5) 0px 2px 2px;
+}
+
+.tile {
+  padding: 35x;
+  border: 1pt solid $content_color;
+  &:hover {
+    border: 1pt solid darken($content_color, 50%);
+  }
 }
 
 footer {

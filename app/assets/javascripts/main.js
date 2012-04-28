@@ -4,7 +4,6 @@ $(document).ready(function() {
   $(".small_head ").hide();
   $("#content").hide();
   $(".stuff").hide();
-  $("#main_bar").show().animate({width:"100%"}, 800)
 
   $(".link").click(function() {
     target = $(this).attr("target");
@@ -55,10 +54,11 @@ $(document).ready(function() {
 })
 
 function animate(target, view) {
+  var time = 500;
   if(target == "about" || target == "team" || target == "media") {
     if(view == "home") {
       $("body").css({
-        backgroundColor: "#323232"
+        backgroundColor: "#555"
       });
       $("#main").fadeOut(function() {
         $("#"+target).show();
@@ -68,9 +68,8 @@ function animate(target, view) {
         top: 0,
         height: 50,
         fontSize: 24
-      }, 1000, function() {
-        console.log("done")
-      });
+      }, time);
+      $("#main_bar").css("backgroundImage", $("#gradient").css("backgroundImage"))
       $(".big_head").fadeOut(function() {
         $(".small_head").fadeIn();
       })
@@ -78,7 +77,7 @@ function animate(target, view) {
     else if (view != target){
       $(".stuff").fadeOut("fast", function() {
         setTimeout(function() {
-          $("#"+target).fadeIn();
+          $("#"+target).fadeIn("fast");
         }, 200);
       });
     }
