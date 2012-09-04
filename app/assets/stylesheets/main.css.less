@@ -55,6 +55,7 @@
 
 
 body {
+  background-image: url(/assets/back3.jpg);
   background-image: url(/assets/back-diag.jpg);
   background-repeat: repeat;
   font-family: 'Open Sans';
@@ -277,7 +278,7 @@ div {
   
 
 @tile: 200px;
-@tile-big: 275px;
+@tile-big: 250px;
 @alley: 50px;
 .tile-pair {
   display: inline-block;
@@ -327,7 +328,7 @@ div {
     text-align: justify;
     opacity: 0;
     .transition(opacity, @t-time);
-    margin: 5px;
+    padding: 5px;
     .gradient(rgba(0,0,0,0.7), transparent);
 
     & strong {
@@ -347,11 +348,13 @@ div {
   display: block;
   width: @small_width;
   text-align: center;
-  color: white;
   margin: 0 auto;
   color: black;
   a {
     color: black;
+    &:hover {
+      color: #555;
+    }
   }
   margin-top: 10px;
 }
@@ -360,6 +363,9 @@ div {
   color: white;
   a {
     color: white;
+    &:hover {
+      color: #bbb;
+    }
   }
   margin: 0;
 }
