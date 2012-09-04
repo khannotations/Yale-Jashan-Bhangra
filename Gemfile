@@ -6,7 +6,7 @@ gem 'rails', '3.2.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'haml'
-gem 'bourbon'
+gem "bourbon", "~> 0.2.1"
 gem 'heroku'
 gem 'therubyracer'
 
@@ -20,7 +20,7 @@ end
 
 # Gems
 # in production environments by default.
-group :assets do
+# group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'less'
@@ -29,7 +29,7 @@ group :assets do
   # gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
-end
+# end
 
 gem 'jquery-rails'
 
