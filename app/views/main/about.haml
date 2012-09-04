@@ -1,0 +1,27 @@
+- content_for :title, "YJB | About"
+- content_for :body_class, ""
+- content_for :header, raw(content_header "about")
+
+
+.main.about
+  %h1 Yale Jashan Bhangra
+  .left
+    .well
+      %p Since the early 1800's, Yale Jashan Bhangra has been striving to make the best Punjabi hand-woven baskets, going as far as West Haven to gather supplies and deliver that authentic feel.
+    %h3 Our mission
+    .well
+      %ul.fun-list
+        %li We seek to share our passion with the community
+        %li We embrace Bhangra as a competitive dance and perform at national competitions
+        %li We honor an ancient tradition and culture with our dance
+    %h3 Want us to perform?
+    .well
+      %p 
+        Please 
+        %a{:href=> "mailto:yalejashanbhangra@gmail.com"} contact 
+        our captains, Sonia and Scott, if you'd like us to perform or provide Bhangra lessons!
+  .right
+    %iframe.about-iframe{ :width=>"560", :height=>"400", :src=>"http://www.youtube.com/embed/TMHTJ8Y3i3g?start=61", :frameborder=>"0", :allowfullscreen=>"allowfullscreen"}
+    %p{:style => "text-align: center; margin-top: 10px; font-weight: bold; font-size: 16px;"} Make sure to watch full-screen!
+
+= render :partial => 'footer'

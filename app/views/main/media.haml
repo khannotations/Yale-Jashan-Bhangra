@@ -1,0 +1,22 @@
+- content_for :title, "YJB | Media"
+- content_for :body_class, ""
+- content_for :header, raw(content_header "media")
+
+
+.main
+  %h1 Media page coming soon!
+-#
+  %h1 Look all all this cool hype:
+  %a{:href => "http://www.youtube.com/embed/-RpCYqXZr2c", :class => "various fancybox.iframe"}
+    %img.tile{:src=>"/assets/background.jpg", :alt => "Pao Bhangra"}
+  %h1 Pic's, y'all!
+  %a.fancybox-thumb{:rel => "fancybox-thumb", :href => "/assets/background.jpg", :title => "The bhangra background!"}
+    %img.tile{:src => "/assets/bg_t.jpg", :alt => "the back"}
+  %a.fancybox-thumb.hide{:rel => "fancybox-thumb", :href => "/assets/background.jpg", :title => "Second time"}
+    %img.tile{:src => "/assets/bg_t.jpg", :alt => "the back"}
+  %a.fancybox-thumb.hide{:rel => "fancybox-thumb", :href => "/assets/background.jpg", :title => "the charm"}
+    %img.tile{:src => "/assets/bg_t.jpg", :alt => "the back"}
+  %a.fancybox-thumb.hide{:rel => "fancybox-thumb", :href => "/assets/background.jpg", :title => "with feeling"}
+    %img.tile{:src => "/assets/bg_t.jpg", :alt => "the back"}
+
+= render :partial => 'footer'

@@ -7,6 +7,7 @@ gem 'rails', '3.2.1'
 
 gem 'haml'
 gem 'heroku'
+gem 'therubyracer'
 
 group :development, :test do
   gem 'sqlite3'
@@ -19,10 +20,10 @@ end
 # Gems
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
+  #gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
-  gem 'bourbon'
+  gem 'less'
+  #gem 'bourbon'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer'
 
