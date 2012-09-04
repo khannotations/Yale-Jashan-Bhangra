@@ -3,7 +3,7 @@
 
 - content_for :header, ""
 .index-back
-  .mailing.hidden
+  .mailing.hide
     %h3 Join our mailing list!
     %p For updates about auditions, performances and more!
     #m
@@ -11,6 +11,16 @@
       %input#m-last{:type => "text", :placeholder => "Last name"}
       %input#m-email{:type => "text", :placeholder => "Email"}
       #m-submit Bruahh!
+  .mailing
+    %h1 News!
+    %p 
+      Come to the Bhangra workshops, 
+      %strong now and now and now
+    %p 
+      Auditions are 
+      %strong here
+      at
+      %strong this time.
   .big-head
     %li.img
       %a{:href=> "/"}
