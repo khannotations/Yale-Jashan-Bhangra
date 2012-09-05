@@ -313,7 +313,7 @@ div {
     margin: 0 @alley;
   }
 }
-@t-time: 0.5s;
+@t-time: 0.7s;
 .tile {
   height: @tile;
   width: @tile;
@@ -326,6 +326,9 @@ div {
   background-color: black;
   &:hover {
     height: @tile-big;  
+    & >.top {
+      opacity: 0;
+    }
     & >.bottom {
       opacity: 1;
     }
@@ -336,6 +339,9 @@ div {
 
   & .bottom {
     opacity: 0;
+  }
+  & .top {
+    height: 100%;
   }
   img {
     width: 100%;
