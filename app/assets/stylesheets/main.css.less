@@ -189,8 +189,13 @@ div {
   padding: 3px 0;
   li {
     display: inline-block;
-    width: 100px;
+    margin-right: 60px;
     font-size: 16px;
+    &:last-child {
+      padding-top: 10px;
+      margin-right: 0;
+      padding-right: 0;
+    }
   }
   a {
     text-decoration: none;
@@ -208,9 +213,6 @@ div {
     &.selected {
       text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     }
-  }
-  .img {
-    width: 100px;
   }
   img {
     vertical-align: middle;
