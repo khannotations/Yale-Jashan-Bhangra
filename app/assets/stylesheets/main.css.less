@@ -55,16 +55,9 @@
 
 
 body {
-  background-image: url(/assets/back3.jpg);
-  background-image: url(/assets/back-diag.jpg);
-  background-repeat: repeat;
   font-family: 'Open Sans';
   font-size: @font-size;
   line-height: @line-height;
-}
-body.index {
-  background-image: none;
-  background-color: black;
 }
 
 a {
@@ -75,8 +68,16 @@ div {
   vertical-align: top;
 }
 
+.wrapper {
+  background-repeat: repeat;
+  &.index {
+    background-color: black;
+  }
+}
+
 .container {
   width: @big_width;
+  position: relative;
 }
 
 .index-back {
@@ -95,6 +96,7 @@ div {
 
 .big-head {
   .gradient(rgba(20, 20, 20, 0.7),rgba(0, 0, 0, 1) );
+  margin-top: 600px;
   height: 80px;
   font-size: 0;
   padding: 10px 35px;
@@ -129,7 +131,9 @@ div {
 @mailing_height: 200px;
 .mailing {
   padding: 15px;
-  margin-left: 780px;
+  position: absolute;
+  right: 80px;
+  width: 300px;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1pt solid #888;
   // height: @mailing_height;

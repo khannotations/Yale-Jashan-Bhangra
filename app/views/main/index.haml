@@ -1,5 +1,5 @@
 - content_for :title, "Yale Jashan Bhangra"
-- content_for :body_class, "class='index'"
+- content_for :body_class, "index"
 
 - content_for :header, ""
 .index-back
@@ -12,11 +12,8 @@
     %p 
       We encourage all members of the Class of 2017 (and any other Yalies) to come to our free workshops and upcoming auditions! Times and dates to be announced; join our mailing list or email yalejashanbhangra@gmail.com with questions.
 
-    #m
-      %input#m-first{:type => "text", :placeholder => "First name"}
-      %input#m-last{:type => "text", :placeholder => "Last name"}
-      %input#m-email{:type => "text", :placeholder => "Email"}
-      #m-submit Join!
+    :plain
+      <iframe src="https://docs.google.com/forms/d/1gwsqOPbaDkaQzfwYtoAMHeR2PwY2r-ei4Kc4X24e_xc/viewform?embedded=true" width="300" height="400" frameborder="0" marginheight="0" marginwidth="0" style="margin-top: 10px">Loading...</iframe>
   .big-head
     %li.img
       %a{:href=> "/"}
