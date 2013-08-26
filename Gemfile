@@ -18,7 +18,6 @@ group :production do
   gem 'thin'
 end
 
-gem 'sass-rails'
 gem 'coffee-rails'
 gem 'less'
 gem 'therubyracer'
