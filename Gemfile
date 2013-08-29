@@ -9,6 +9,7 @@ gem 'rails', '4.0.0'
 gem 'haml'
 gem "bourbon", "~> 0.2.1"
 gem 'heroku'
+gem 'thin'
 
 group :development, :test do
   gem 'sqlite3'
