@@ -16,7 +16,6 @@
 /lib
 /test
 /vendor
-/db
 /doc
 /app/helpers
 /app/mailers
